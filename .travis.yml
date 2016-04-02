@@ -19,4 +19,4 @@ install: source build_tools/travis/install.sh
 
 script:
   - $CXX --version
-  - ctest -V
+  - make test-OpenMEEG
