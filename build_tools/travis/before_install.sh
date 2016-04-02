@@ -3,6 +3,7 @@ if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
     # Install some custom requirements on OS X
     brew install cmake
     brew install swig
+    brew install Doxygen
 
 else
     # Install some custom requirements on Linux
