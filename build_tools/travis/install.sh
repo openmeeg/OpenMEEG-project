@@ -13,7 +13,7 @@ else
     if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.4"; fi
 
     sudo apt-get update
-    sudo apt-get install doxygen python-numpy swig python-dev libatlas-base-dev libvtk5-dev libtiff4-dev libmatio-dev libhdf5-serial-dev
+    sudo apt-get install doxygen python-numpy swig python-dev libatlas-base-dev libvtk5-dev libtiff4-dev
     wget https://s3.amazonaws.com/biibinaries/thirdparty/cmake-3.0.2-Linux-64.tar.gz
     tar -xzf cmake-3.0.2-Linux-64.tar.gz
     sudo cp -fR cmake-3.0.2-Linux-64/* /usr
