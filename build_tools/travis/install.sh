@@ -16,7 +16,7 @@ else
     # sudo apt-get install doxygen libatlas-dev libatlas-base-dev libblas-dev liblapack-dev # python-numpy swig python-dev libvtk5-dev libtiff4-dev
     # sudo apt-get install doxygen libblas-dev liblapack-dev # python-numpy swig python-dev libvtk5-dev libtiff4-dev
     # sudo apt-get install doxygen python-numpy swig python-dev
-    sudo apt-get install doxygen
+    sudo apt-get install doxygen sshpass
     wget https://s3.amazonaws.com/biibinaries/thirdparty/cmake-3.0.2-Linux-64.tar.gz
     tar -xzf cmake-3.0.2-Linux-64.tar.gz
     sudo cp -fR cmake-3.0.2-Linux-64/* /usr

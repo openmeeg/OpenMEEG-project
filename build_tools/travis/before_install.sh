@@ -11,6 +11,7 @@ if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
     brew install cmake
     brew install swig
     brew install Doxygen
+    brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 
 else
     # Install some custom requirements on Linux

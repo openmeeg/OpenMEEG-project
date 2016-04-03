@@ -21,4 +21,6 @@ script:
   - $CXX --version
   - make test-OpenMEEG
   - cpack -G TGZ .
-  - scp *tar.gz $DEPLOY_LOGIN:$DEPLOY_PASSWORD@scm.gforge.inria.fr:/home/groups/openmeeg/htdocs/download/
+  - echo "$SSH_KEY" > toto.txt
+  - cat toto.txt
+  - sshpass -p '$DEPLOY_PASSWORD' scp *tar.gz $DEPLOY_LOGIN@scm.gforge.inria.fr:/home/groups/openmeeg/htdocs/download/
