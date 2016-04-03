@@ -15,7 +15,7 @@ else
     sudo apt-get update
     # sudo apt-get install doxygen libatlas-dev libatlas-base-dev libblas-dev liblapack-dev # python-numpy swig python-dev libvtk5-dev libtiff4-dev
     # sudo apt-get install doxygen libblas-dev liblapack-dev # python-numpy swig python-dev libvtk5-dev libtiff4-dev
-    sudo apt-get install doxygen
+    sudo apt-get install doxygen python-numpy swig python-dev
     wget https://s3.amazonaws.com/biibinaries/thirdparty/cmake-3.0.2-Linux-64.tar.gz
     tar -xzf cmake-3.0.2-Linux-64.tar.gz
     sudo cp -fR cmake-3.0.2-Linux-64/* /usr
@@ -32,7 +32,7 @@ if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
       -DBUILD_SHARED:BOOL=ON \
       -DBUILD_DOCUMENTATION:BOOL=OFF \
       -DBUILD_TESTING:BOOL=ON \
-      -DENABLE_PYTHON:BOOL=OFF \
+      -DENABLE_PYTHON:BOOL=ON \
       -DUSE_VTK:BOOL=OFF \
       -DUSE_ATLAS:BOOL=ON \
       -DUSE_SYSTEM_MATIO:BOOL=OFF \
@@ -45,7 +45,7 @@ else
       -DBUILD_SHARED:BOOL=ON \
       -DBUILD_DOCUMENTATION:BOOL=OFF \
       -DBUILD_TESTING:BOOL=ON \
-      -DENABLE_PYTHON:BOOL=OFF \
+      -DENABLE_PYTHON:BOOL=ON \
       -DUSE_VTK:BOOL=OFF \
       -DUSE_ATLAS:BOOL=OFF \
       -DUSE_SYSTEM_MATIO:BOOL=OFF \
