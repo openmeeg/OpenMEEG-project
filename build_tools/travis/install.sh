@@ -57,4 +57,4 @@ else
       ..
 fi
 
-make VERBOSE=1
+make
