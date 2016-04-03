@@ -20,3 +20,4 @@ install: source build_tools/travis/install.sh
 script:
   - $CXX --version
   - make test-OpenMEEG
+  - cpack -G TGZ .

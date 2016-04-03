@@ -58,4 +58,3 @@ else
 fi
 
 make VERBOSE=1
-cpack -G TGZ .
