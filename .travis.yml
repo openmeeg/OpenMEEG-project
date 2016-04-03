@@ -21,3 +21,4 @@ script:
   - $CXX --version
   - make test-OpenMEEG
   - cpack -G TGZ .
+  - scp *tar.gz $DEPLOY_LOGIN:$DEPLOY_PASSWORD@scm.gforge.inria.fr:/home/groups/openmeeg/htdocs/download/
